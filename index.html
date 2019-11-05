@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
+<head> 
+ <title>MDN</title>
  <style>
     html {
-      font-family: "Roboto", sans-serif;
-      line-height: 1.2
     }
     body {
       color: #000;
@@ -12,16 +12,35 @@ layout: default
     }
     .page {
       max-width: 1000px;
-      margin: 20px;
-      padding: 40px;
+      margin: 0 auto;
+      padding: 0 2em;
     }
+    .header {
+      background-color: #333;
+      background-image: url('http://www.v3wall.com/wallpaper/1920_1200/1006/1920_1200_20100614094820326170.jpg');
+      background-size: cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 25em;
+      width: 100%;
+      z-index: -1;
+    }
+    .header-content {
+      height: 22em;
+    }
+    .header-text {
+      color: #FFF;
+      display: table-cell;
+      height: 21em;
+      vertical-align: bottom;
   .main-content {
       background-color: #FFF;
       padding-bottom: 5em;
     }
     .menu {
       background-color: #fff;
-      padding-top: 0em;
+      padding-top: 2em;
       padding-bottom: 3em;
       position: -webkit-sticky;
       position: -moz-sticky;
@@ -33,6 +52,7 @@ layout: default
       margin-bottom: 0;
   }
   </style>
+</head> 
 <body>
     <!--<nav> Can't see second page
 <p><u><b>Navigation</b></u></p>
@@ -40,7 +60,15 @@ layout: default
     <br>
     <a href="./page2.html">Contact Us</a>
 </nav>--> 
- <img src="MDN_Horizontal_Color-1.png" alt="MDN logo" height="80" align="middle" />
+ 
+ <div class="header"></div>
+<div class="page header-content">
+    <span class="header-text">
+       <img src="MDN_Horizontal_Color-1.png" alt="MDN logo" height="170" align="middle" />
+    </span>
+  </div>
+ 
+
   <div class="page main-content">
    <nav class="menu" align="middle">
       <a href="#about us">About Us</a> |
@@ -109,7 +137,7 @@ layout: default
 
 </body>
    </div>
-   
+   </div>
 <footer>           
    <div id="content">
         <img src="Fermi logo.png" alt="Fermi logo" height="80" width="100" align="middle"/>
@@ -120,6 +148,5 @@ layout: default
         <img src="Swift Logo.gif" alt="Swift Logo" height="50" align="middle" />
         <img src="Veritas Logo.png" alt="Veritas Logo" height="70" align="middle" />
    </div>
- </div>
 <footer>
 
